@@ -12,14 +12,17 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.0</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -48,14 +51,8 @@
             <artifactId>log4j-core</artifactId>
             <version>2.19.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.1</version>
-            <scope>test</scope>
-        </dependency>
 
-    </dependencies>
+</dependencies>
 
     <build>
         <finalName>ROOT</finalName>
@@ -72,21 +69,8 @@
                 <version>3.0.0-M7</version>
                 <configuration>
                     <skipTests>false</skipTests>
-                    <includes>
-                        <include>game/mechanica/GameCountTest.java</include>
-                    </includes>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.junit.jupiter</groupId>
-                        <artifactId>junit-jupiter-engine</artifactId>
-                        <version>5.8.1</version>
-                    </dependency>
-                </dependencies>
             </plugin>
-
         </plugins>
-
     </build>
-
 </project>
