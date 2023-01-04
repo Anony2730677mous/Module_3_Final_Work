@@ -4,7 +4,7 @@
     <groupId>com.javarush</groupId>
     <artifactId>quest</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>quest</name>
+    <name>game</name>
     <packaging>war</packaging>
     <url>http://maven.apache.org</url>
 
