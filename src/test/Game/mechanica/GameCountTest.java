@@ -7,20 +7,20 @@ import org.junit.jupiter.api.TestInstance;
 
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class GameCountTest {
+public class GameCountTest {
     private GameCount gameCount;
     private final String name = "user";
     private final Integer zero = 0;
     private boolean getUser;
     @BeforeAll
-    void init() {
+    public void init() {
         gameCount = new GameCount();
         gameCount.addUser(name);
         getUser = gameCount.getThisUser(name);
     }
 
-    @Test
-    void addUser_Null_String_Argument_Test() {
+     @Test
+     public void addUser_Null_String_Argument_Test() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> gameCount.addUser(null));
     }
     @Test

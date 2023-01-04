@@ -9,17 +9,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class GameLogicTest {
+public class GameLogicTest {
     private GameLogic gameLogic;
     private final String gameState1 = "Ты потерял память. Принять вызов НЛО?";
 
     @BeforeAll
-    void init() {
+    public void init() {
         gameLogic =  new GameLogic();
         gameLogic.addAnswer();
     }
     @Test
-    void answer_Null_String_Argument_Test() {
+    public void answer_Null_String_Argument_Test() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> gameLogic.answer(null));
     }
     @Test
