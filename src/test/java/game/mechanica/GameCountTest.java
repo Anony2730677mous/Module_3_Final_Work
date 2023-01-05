@@ -19,8 +19,8 @@ public class GameCountTest {
         getUser = gameCount.getThisUser(name);
     }
 
-     @Test
-     public void addUser_Null_String_Argument_Test() {
+    @Test
+    public void addUser_Null_String_Argument_Test() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> gameCount.addUser(null));
     }
     @Test
@@ -66,4 +66,3 @@ public class GameCountTest {
         Assertions.assertTrue(gameCount.getThisUser(name));
     }
 }
-

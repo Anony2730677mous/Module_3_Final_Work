@@ -44,4 +44,3 @@ public class GameLogicTest {
         Assertions.assertEquals("String", gameLogic.answer(gameState1).get(0).getClass().getSimpleName());
     }
 }
-
